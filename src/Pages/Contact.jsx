@@ -2,6 +2,9 @@ import React from "react";
 import mail from "../assets/mail.jpg";
 
 function Contact() {
+  // Formspree endpoint URL
+  const formspreeEndpoint = "https://formspree.io/f/xdknkqjz"; // Replace with your Formspree endpoint
+
   return (
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen p-6 md:p-12 flex flex-col items-center">
       {/* Contact Us Heading */}
@@ -40,7 +43,11 @@ function Contact() {
           <h2 className="text-3xl font-extrabold text-foreground mb-6">
             Send me a message 🚀
           </h2>
-          <form className="space-y-4">
+          <form
+            action="https://formspree.io/f/xdknkqjz"
+            method="POST"
+            className="space-y-4"
+          >
             <div className="mb-4">
               <label
                 htmlFor="full-name"
@@ -51,7 +58,8 @@ function Contact() {
               <input
                 type="text"
                 id="full-name"
-                placeholder="Enter you full name"
+                name="full-name" // Add name attribute
+                placeholder="Enter your full name"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 required
               />
@@ -66,6 +74,7 @@ function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email" // Add name attribute
                 placeholder="Enter your email address"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 required
@@ -81,6 +90,7 @@ function Contact() {
               <input
                 type="text"
                 id="subject"
+                name="subject" // Add name attribute
                 placeholder="Enter subject"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
               />
@@ -94,6 +104,7 @@ function Contact() {
               </label>
               <textarea
                 id="message"
+                name="message" // Add name attribute
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 rows="4"
                 placeholder="Enter your message"

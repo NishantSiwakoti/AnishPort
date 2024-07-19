@@ -18,8 +18,13 @@ function Header() {
     >
       <div className="flex justify-between items-center w-full md:w-auto py-2 md:py-0">
         <NavLink to="/">
-          <h1 className="md:text-4xl text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-red-500 to-red-500">
-            Eanish
+          <h1 className="md:text-4xl text-2xl font-bold bg-clip-text text-transparent">
+            <span className="text-[#bacef0]">E</span>
+            <span className="text-[#f57c00]">a</span>
+            <span className="text-[#28a745]">n</span>
+            <span className="text-[#dc3545]">i</span>
+            <span className="text-[#17a2b8]">s</span>
+            <span className="text-[#813ff1]">h</span>
           </h1>
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer md:hidden">
@@ -49,6 +54,7 @@ function Header() {
           {[
             { to: "/", label: "Home" },
             { to: "/about", label: "About" },
+            { to: "/services", label: "Services" },
             { to: "/tools", label: "Software" },
             { to: "/projects", label: "Projects" },
             { to: "/contact", label: "Contact" },
