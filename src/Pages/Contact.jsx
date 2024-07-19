@@ -29,7 +29,7 @@ function Contact() {
             <div>
               <p className="text-muted-foreground text-sm">Mail me at</p>
               <a
-                href="mailto:framesmillion@gmail.com"
+                href="mailto:annishhacharya@gmail.com"
                 className="text-primary font-medium hover:underline"
               >
                 annishhacharya@gmail.com
