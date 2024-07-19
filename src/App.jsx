@@ -9,7 +9,7 @@ import Tools from "./Pages/Tools";
 import Services from "./Pages/Services";
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 export default App;
