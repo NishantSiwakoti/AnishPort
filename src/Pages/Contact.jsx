@@ -1,9 +1,18 @@
 import React from "react";
 import mail from "../assets/mail.jpg";
+import { useEffect } from "react";
 
-function Contact() {
-  // Formspree endpoint URL
-  const formspreeEndpoint = "https://formspree.io/f/xdknkqjz"; // Replace with your Formspree endpoint
+function Contact({ setProgress, title }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 500);
+  }, []);
+  useEffect(() => {
+    document.title = `${title}`;
+  });
+  const formspreeEndpoint = "https://formspree.io/f/xdknkqjz";
 
   return (
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen p-6 md:p-12 flex flex-col items-center">

@@ -5,6 +5,7 @@ import {
   SparklesIcon,
   ShareIcon,
 } from "@heroicons/react/outline";
+import { useEffect } from "react";
 
 const services = [
   { name: "Video Editing", icon: VideoCameraIcon },
@@ -14,7 +15,16 @@ const services = [
   { name: "Social Media Clips", icon: ShareIcon },
 ];
 
-const Services = () => {
+const Services = ({ setProgress, title }) => {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 500);
+  }, []);
+  useEffect(() => {
+    document.title = `${title}`;
+  });
   return (
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 mx-auto py-12">
       <h2 className="text-3xl font-bold text-center text-[#2358aa] mb-8">

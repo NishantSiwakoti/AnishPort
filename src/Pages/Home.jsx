@@ -19,7 +19,7 @@ const services = [
   { name: "Social Media Clips", icon: ShareIcon },
 ];
 
-function Home() {
+function Home({ title, setProgress }) {
   return (
     <>
       <main className="bg-gradient-to-r min-h-screen from-blue-100 via-purple-100 to-pink-100 px-8 md:px-16 lg:px-32 mx-auto flex flex-col md:flex-row items-center">
@@ -89,7 +89,7 @@ function Home() {
           />
         </div>
       </main>
-      <About />
+      <About setProgress={setProgress} title={title} />
       {/* Services Section */}
       <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 mx-auto py-12">
         <h2 className="text-3xl font-bold text-center text-[#2358aa] mb-8">
@@ -110,9 +110,9 @@ function Home() {
         </div>
       </div>
 
-      <Tools />
-      <Projects />
-      <Contact />
+      <Tools setProgress={setProgress} title={title} />
+      <Projects setProgress={setProgress} title={title} />
+      <Contact setProgress={setProgress} title={title} />
     </>
   );
 }

@@ -1,8 +1,18 @@
 import React from "react";
 import pp from "../assets/pp.png";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
-function About() {
+function About({ title, setProgress }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 500);
+  }, []);
+  useEffect(() => {
+    document.title = `${title}`;
+  });
   return (
     <div className="flex flex-col md:flex-row min-h-screen items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-8 md:p-12 lg:p-16 rounded-lg shadow-xl">
       <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col items-center md:items-start lg:ml-8 md:ml-8 text-center md:text-left">

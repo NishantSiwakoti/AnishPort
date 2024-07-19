@@ -1,8 +1,18 @@
 import React from "react";
 import Project from "../Components/Project";
+import { useEffect } from "react";
 import { projectDetails } from "../Details";
 
-function Projects() {
+function Projects({ title, setProgress }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 500);
+  }, []);
+  useEffect(() => {
+    document.title = `${title}`;
+  });
   return (
     <main className="bg-gradient-to-r min-h-screen from-blue-100 via-purple-100 to-pink-100 mx-auto max-width pt-4 pb-5 px-4">
       <section>
