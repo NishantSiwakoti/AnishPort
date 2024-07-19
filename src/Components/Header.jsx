@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import useScroll from "../hooks/useScroll";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const isScrolled = useScroll();
 
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="mx-auto md:flex justify-between items-center py-4 max-width bg-[#2358aa] shadow-lg">
+    <header
+      className={`sticky top-0 mx-auto md:flex justify-between items-center py-4 max-width bg-[#2358aa] shadow-lg z-50 transition-all duration-300 ${
+        isScrolled ? "bg-opacity-80 backdrop-blur-md" : "bg-opacity-100"
+      }`}
+    >
       <div className="flex justify-between items-center w-full md:w-auto py-2 md:py-0">
         <NavLink to="/">
-          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-red-500 to-red-500">
+          <h1 className="md:text-4xl text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-red-500 to-red-500">
             Eanish
-          </h1>{" "}
+          </h1>
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer md:hidden">
           <svg
@@ -43,6 +49,7 @@ function Header() {
           {[
             { to: "/", label: "Home" },
             { to: "/about", label: "About" },
+            { to: "/tools", label: "Software" },
             { to: "/projects", label: "Projects" },
             { to: "/contact", label: "Contact" },
           ].map((item) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import pp from "../assets/pp.png";
+import { NavLink } from "react-router-dom";
 
 function About() {
   return (
@@ -24,9 +25,11 @@ function About() {
           amazing together!
         </p>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
-            Contact Me
-          </button>
+          <NavLink to="/contact">
+            <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+              Contact Me
+            </button>
+          </NavLink>
           <button className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
             Download CV
           </button>
@@ -34,7 +37,7 @@ function About() {
       </div>
       <div className="md:w-1/2 flex justify-center">
         <img
-          className="rounded-full w-96 h-96 object-cover border-8 border-[#2358aa] shadow-lg"
+          className="rounded-full w-60 md:w-96 object-cover border-8 border-[#254d8a] shadow-lg"
           src={pp}
           alt="Profile picture"
         />

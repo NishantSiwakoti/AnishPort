@@ -5,14 +5,14 @@ function Contact() {
   return (
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen p-6 md:p-12 flex flex-col items-center">
       {/* Contact Us Heading */}
-      <h1 className="text-4xl font-extrabold text-foreground mb-8 text-center">
+      <h1 className="text-4xl text-[#2358aa] font-extrabold text-foreground mb-8 text-center">
         Contact Me
       </h1>
 
       {/* Contact Section */}
       <div className="flex flex-col md:flex-row items-center justify-center w-full">
         {/* Contact Information */}
-        <div className="md:w-1/2 mb-8 md:mb-0 md:mr-8">
+        <div className="md:w-1/2 mb-8 md:mb-0 md:mr-8 text-[#2358aa]">
           <h2 className="text-3xl font-extrabold text-foreground mb-4">
             Let's chat.
             <br />
@@ -36,9 +36,9 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="md:w-1/2 bg-card p-8 rounded-lg shadow-lg">
+        <div className="md:w-1/2 bg-card p-8 rounded-lg shadow-lg text-[#2358aa]">
           <h2 className="text-3xl font-extrabold text-foreground mb-6">
-            Send us a message 🚀
+            Send me a message 🚀
           </h2>
           <form className="space-y-4">
             <div className="mb-4">
@@ -51,6 +51,7 @@ function Contact() {
               <input
                 type="text"
                 id="full-name"
+                placeholder="Enter you full name"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 required
               />
@@ -65,6 +66,7 @@ function Contact() {
               <input
                 type="email"
                 id="email"
+                placeholder="Enter your email address"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 required
               />
@@ -79,6 +81,7 @@ function Contact() {
               <input
                 type="text"
                 id="subject"
+                placeholder="Enter subject"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
               />
             </div>
@@ -87,12 +90,13 @@ function Contact() {
                 htmlFor="message"
                 className="block text-muted-foreground mb-2 text-sm font-medium"
               >
-                Tell us more about your project*
+                Tell me more about your project*
               </label>
               <textarea
                 id="message"
                 className="w-full p-3 border border-input rounded-lg focus:ring-primary focus:border-primary"
                 rows="4"
+                placeholder="Enter your message"
                 required
               ></textarea>
             </div>
