@@ -52,14 +52,14 @@ function Home() {
           </div>
           <div className="flex justify-center md:justify-start mt-4 space-x-4">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/acdcanish"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-facebook fa-2x text-blue-700 hover:text-[#2358aa] transition duration-300"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/aannnishhh/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,7 +73,7 @@ function Home() {
               <i className="fab fa-linkedin fa-2x text-[#0073b1] hover:text-blue-700 transition duration-300"></i>
             </a>
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@wrap.catroon"
               target="_blank"
               rel="noopener noreferrer"
             >
