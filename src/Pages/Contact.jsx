@@ -6,7 +6,7 @@ function Contact() {
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen p-6 md:p-12 flex flex-col items-center">
       {/* Contact Us Heading */}
       <h1 className="text-4xl font-extrabold text-foreground mb-8 text-center">
-        Contact Us
+        Contact Me
       </h1>
 
       {/* Contact Section */}

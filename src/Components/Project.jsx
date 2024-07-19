@@ -11,7 +11,7 @@ function Project({
 }) {
   return (
     <div className="flex justify-center w-full">
-      <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 max-w-lg w-full">
+      <article className="rounded-xl bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 max-w-lg w-full">
         <img src={image} alt="" loading="lazy" className="w-full" />
         <div className="dark:bg-dark-card p-4">
           <h1 className="dark:text-light-heading font-semibold text-lg pt-1">
