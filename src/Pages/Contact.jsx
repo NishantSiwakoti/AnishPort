@@ -32,7 +32,7 @@ function Contact() {
                 href="mailto:framesmillion@gmail.com"
                 className="text-primary font-medium hover:underline"
               >
-                eanishacharya@gmail.com
+                annishhacharya@gmail.com
               </a>
             </div>
           </div>
