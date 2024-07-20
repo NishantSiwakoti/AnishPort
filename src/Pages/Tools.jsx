@@ -2,6 +2,8 @@ import React from "react";
 import pr from "../assets/pr.png";
 import fc from "../assets/fc.png";
 import w from "../assets/w.jpg";
+import di from "../assets/di.png";
+import cap from "../assets/cap.png";
 import Cards from "../Components/Cards";
 import { useEffect } from "react";
 const Tools = ({ setProgress, title }) => {
@@ -31,6 +33,14 @@ const Tools = ({ setProgress, title }) => {
         <div>
           {" "}
           <Cards img={w} title="Wondershare Filmora" />
+        </div>
+        <div>
+          {" "}
+          <Cards img={cap} title="CapCut" />
+        </div>
+        <div>
+          {" "}
+          <Cards img={di} title="DiVinci Resolver" />
         </div>
       </div>
     </section>
