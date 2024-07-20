@@ -11,7 +11,7 @@ function Projects({ title, setProgress }) {
     }, 500);
   }, []);
   useEffect(() => {
-    document.title = `${title}`;
+    document.title = `${title} | Eanish`;
   });
   return (
     <main className="bg-gradient-to-r min-h-screen from-blue-100 via-purple-100 to-pink-100 mx-auto max-width pt-4 pb-5 px-4">

@@ -10,7 +10,7 @@ function Contact({ setProgress, title }) {
     }, 500);
   }, []);
   useEffect(() => {
-    document.title = `${title}`;
+    document.title = `${title} | Eanish`;
   });
   const formspreeEndpoint = "https://formspree.io/f/xdknkqjz";
 

@@ -23,7 +23,7 @@ const Services = ({ setProgress, title }) => {
     }, 500);
   }, []);
   useEffect(() => {
-    document.title = `${title}`;
+    document.title = `${title} | Eanish`;
   });
   return (
     <div className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 mx-auto py-12">

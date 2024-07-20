@@ -11,7 +11,7 @@ function About({ title, setProgress }) {
     }, 500);
   }, []);
   useEffect(() => {
-    document.title = `${title}`;
+    document.title = `${title} | Eanish`;
   });
   return (
     <div className="flex flex-col md:flex-row min-h-screen items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-8 md:p-12 lg:p-16 rounded-lg shadow-xl">

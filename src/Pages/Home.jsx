@@ -18,8 +18,12 @@ const services = [
   { name: "Special Effects and Motion Graphics", icon: SparklesIcon },
   { name: "Social Media Clips", icon: ShareIcon },
 ];
+import { useEffect } from "react";
 
 function Home({ title, setProgress }) {
+  useEffect(() => {
+    document.title = `${title} | Eanish`;
+  });
   return (
     <>
       <main className="bg-gradient-to-r min-h-screen from-blue-100 via-purple-100 to-pink-100 px-8 md:px-16 lg:px-32 mx-auto flex flex-col md:flex-row items-center">

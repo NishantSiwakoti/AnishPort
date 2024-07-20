@@ -12,7 +12,7 @@ const Tools = ({ setProgress, title }) => {
     }, 500);
   }, []);
   useEffect(() => {
-    document.title = `${title}`;
+    document.title = `${title} | Eanish`;
   });
   return (
     <section className="min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100">
