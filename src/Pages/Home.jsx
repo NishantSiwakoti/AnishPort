@@ -29,7 +29,7 @@ function Home({ title, setProgress }) {
       <main className="bg-gradient-to-r min-h-screen from-blue-100 via-purple-100 to-pink-100 px-8 md:px-16 lg:px-32 mx-auto flex flex-col md:flex-row items-center">
         <div className="text-center md:text-left flex-1 lg:ml-10 md:ml-8">
           <h1 className="text-3xl text-gray-800 pt-5 dark:text-gray-100 md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-            Hi,👋
+            Hi,👋Hello hello hello
           </h1>
           <h1 className="text-3xl font-bold bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent md:text-4xl xl:text-5xl xl:leading-tight mt-2">
             <TypeAnimation
